@@ -1,0 +1,295 @@
+.p1
+{
+    font-size: x-large;
+    background: linear-gradient(to right , #c2efec , #aefff7 , #08f0ff);
+    background: -moz-linear-gradient();
+    background: -o-linear-gradient();
+    background: -webkit-linear-gradient();
+}
+.fond
+{
+    margin: 0% 37%;
+   }
+
+input
+{
+width: 100%;
+margin-bottom: 5%;
+height: 30px;
+margin-bottom: 10%;
+}
+input:hover
+{
+    background-color: burlywood;
+}
+button
+{
+    padding: 0%;
+}
+.formulaire
+{
+    font-size: large;
+    float: left;
+    height: 100%;
+    background-attachment:scroll;
+    border-radius: 5% 5% 5% 5%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5% 5% 5% 5%; 
+    padding: 10% 30%;
+    box-shadow: 10px 10px 10px blanchedalmond;
+}
+.valider
+{
+    background-color: rgb(54, 109, 180); 
+    color:aliceblue;
+}
+.valider:active
+{
+    background-color: aqua;
+}
+.bg
+{
+    margin: 1% 48%;
+    background-color: black;
+    border-radius: 70%;
+    width: 7%;
+}
+@media screen and (max-width : 720px) 
+{
+.formulaire{
+ box-shadow: 10px 10px 10px blanchedalmond;
+   }    
+}
+
+/* la deuxieme partie du code concerne 
+l'acceuil de la page*/
+li {
+    margin-right: 10%;
+}
+.EBDT
+{
+    display: flex;
+    list-style: none;
+    float: left;
+}
+.BDT
+{
+    z-index: 5;
+    position: fixed;
+    padding-top: .3%;
+    width: 100%;
+   border: 1px solid;
+   background-color: rgb(83, 139, 139);
+   border-radius: 5px 5px 5px 5px;
+   box-shadow: 7px 7px 7px rgb(194, 189, 189);
+}
+li:hover
+{
+    border-bottom: 1px solid;
+    box-shadow: 5px 5px 5px rgb(248, 201, 201);
+    color: black;
+}
+#ProduitAVendre
+{
+     padding-bottom: 5%;
+     position: relative;
+     right: 100px;
+}
+.ph
+{
+    flex: 1;
+}
+.contenue p {
+    position: relative;
+    top: -175px;
+    z-index: 1;
+    color:rgb(0, 25, 252);
+    opacity: 0;
+}
+@media screen and (max-width: 1000px) 
+{
+    .BDT{
+       background-color: antiquewhite;
+       height: 50px;
+        font-size: large;
+        }  
+    .logo{
+        height: 50px;
+        width: 50px;
+        float: right;
+        margin-right: 1%;
+    }   
+    body{
+        background-color: rgb(248, 243, 234);
+       
+    }
+    .logo{
+        height: 50px;
+        width: 50px;
+        float: right;
+        margin-right: 1%;
+    }   
+    .produit{
+        background-color: rgb(248, 243, 234);
+       
+    }
+    .ph:hover{
+        
+        transition: background 3s, 1s box-shadow 2s ;
+        background-color: rgb(221, 215, 204);
+        box-shadow: 7px 7px 7px rgb(127, 127, 128);
+    }
+    .contenue img{
+            position: relative;
+            left: 200px;
+            top: 50px;
+    }
+   /*img:hover{
+    opacity: 0;
+   }*/
+    .contenue img{
+            position: relative;
+            left: 200px;
+            top: 50px;
+    }
+    .contenue p {
+        color: rgb(78, 71, 59);
+        margin-left: 155px;
+        margin-right: 200px;
+        z-index: 2;
+        position: relative;
+        top: -110px;
+        transition: 1s color 3s;
+        animation-name: color;
+        animation-duration: 5s;
+    }
+    @keyframes color {
+        from{
+            color: rgb(224, 199, 152);
+        }
+        25%{
+            color: rgb(219, 243, 84);
+        }
+        50%{
+            color: rgb(82, 243, 67)
+        }
+        75%{
+           color:#08ff6f; 
+        }
+        to{
+            color: rgb(0, 25, 252);
+        }
+    }
+    .ph:hover p{
+        opacity: 1;
+        transition: opacity 1s;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 2000px) 
+{
+    
+.contenue
+{
+    display: flex;
+}
+    .BDT{
+        background-attachment: fixed;
+        background-color: rgb(220, 235, 247);
+        height: 90px;
+        font-size: xx-large;
+        }  
+    .logo{
+        height: 90px;
+        width: 110px;
+        float: right;
+        margin-right: 3%;
+    }
+    .EBDT{
+        margin-top: 20px;
+    }      
+    body{
+        background-color: rgb(227, 238, 245);
+        
+    }
+    .contenue p{
+        z-index: 1;
+        opacity: 1;
+        color: black;
+        margin: 80px;
+        position: relative;
+        right: 250px;
+        top: -250px;
+        opacity: 0;
+
+    }
+    .ph:hover{
+background-color: rgb(140, 165, 235);
+box-shadow: 7px 17px 7px rgb(12, 8, 255);
+transition:  background-color 3s, box-shadow 1s;
+animation: ombre 10s infinite;
+position: relative;
+left: -50px;
+    }
+    @keyframes ombre{
+        form{
+            box-shadow: 7px 17px 7px rgb(12, 8, 255);;
+        }
+        25%{
+            box-shadow: 7px 17px 7px rgb(164, 8, 255);;
+        }
+        50%{
+            box-shadow: 7px 17px 7px rgb(255, 8, 255);;
+        }
+        75%{
+            box-shadow: 7px 17px 7px rgb(255, 8, 123);;
+        }
+        to{
+            box-shadow: 7px 17px 7px  red;
+        }
+    }
+    .contenue p:hover{
+        color: white;
+    }
+    .ph{
+        position: relative;
+        top: 12px;
+        left:200px; }
+        .ph:hover img{
+            position: relative;
+            left:150px; 
+            z-index: 3;
+            opacity: 0;
+            transition: opacity 2s;
+            position: relative;
+        }
+        .ph:hover p{
+            position:relative;
+            left:5%;
+            top:-170px;
+            color: white;
+            transition: color 3s;
+            opacity: 1;
+            z-index: 1;
+            animation: paragraph 2s;
+        }
+        @keyframes paragraph {
+            from{
+                top: -100px;
+            }
+            to{
+                top: -170px;
+            }
+        }
+    .photo1{
+        position: relative;
+        top:50px;
+    }
+    .lorem1{
+        z-index: 13;
+        margin-top: 25%;
+        color: rgb(187, 29, 29);
+        opacity: 1;
+    }
+    
+}
